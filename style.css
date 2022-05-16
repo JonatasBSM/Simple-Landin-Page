@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Roboto";
+}
+
+body,html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagens/pexels-felix-mittermeier-956999.jpg);
+    background-position: center center fixed;
+    background-size: cover;
+}
+
+header {
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 950px;
+    display: flex;
+
+    border: 5px white solid;
+}
+
+
+.logo {
+    cursor: pointer;
+    font-family: "Poppins";
+    font-style: italic;
+    font-size: 75px;
+    padding-left: 50px;
+}
+
+nav {
+    display: flex;
+    padding-right: 50px;
+}
+
+nav ul {
+    align-items: center;
+    font-style: italic;
+    font-size: 25px;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+nav ul li {
+    cursor: pointer;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s linear;
+}
+
+a:hover {
+    color: #a09038;;
+    text-decoration: underline;
+}
+
+main{
+    margin-top: 150px;
+}
+
+.Container {
+    width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Container div {
+    margin-top: 10px;
+}
+
+.nomeTitulo {
+    color: #a09038;
+    font-size: 100px;
+    font-family: "Poppins";
+    font-style: normal;
+}
+
+.nomePosicao {
+    color: #a09038;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-style: normal;
+}
+
+.arrowBefore {
+    cursor: pointer;
+    animation: pisca 1s infinite;
+}
+
+.arrowAfter {
+    cursor: pointer;    
+}
+
+i {
+    color: #a09038;
+}
+
+.aboutBefore {
+    display: none;
+}
+
+.aboutAfter {
+    display: block;
+    font-size: 25px;
+}
+
+.aboutAfter p {
+    font-weight: 600;
+    color: #a09038;;
+}
+
+.deixeContato {
+    color: #a09038;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+button {
+    color: black;
+}
+
+@keyframes pisca {
+
+    50% {
+        opacity: 0;
+    }
+    
+}
+
+@media (max-width: 500px)
+{
+
+    html, body {
+        height: 100%;
+    }
+
+    header {
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo {
+        padding-left: 5px;
+        font-size: 50px;
+    }
+
+    nav {
+        justify-content: center;
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+
+    .Container {
+        width: 100%;
+    }
+
+    .nomeTitulo {
+        font-size: 45px;
+    }
+}
